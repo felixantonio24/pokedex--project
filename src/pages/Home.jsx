@@ -30,7 +30,7 @@ const Home = () => {
     <article className='c-home'>
       <img src="img/Home/pokedex.png" alt="Pokedex" className='home__title' />
       <section className='home__body'>
-        <h1 className='home__greeting'>¡Hola Entrenador!</h1>
+        <h1 className='home__greeting'>¡Hola entrenador!</h1>
         <p className='home__petition'>😊Para poder comenzar, dame tu nombre😊</p>
       </section>
       <FormInputButton

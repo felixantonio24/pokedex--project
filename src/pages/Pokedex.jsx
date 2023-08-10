@@ -48,7 +48,7 @@ const Pokedex = () => {
     <article className='c-pokedex'>
       <header className='pokedex__header'>
         <h2 className='pokedex__greeting'>
-          Bienvenido {trainer}! <span className='pokedex__instruction'>Aqui podras encntrar tu pokemon favorito</span>
+          Bienvenido {trainer}! <span className='pokedex__instruction'>Aquí podrás encontrar tu pokemon favorito😀</span>
         </h2>
         <section className="pokedex-filters">
           <FormInputButton
