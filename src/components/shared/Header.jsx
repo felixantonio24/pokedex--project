@@ -26,14 +26,8 @@ const Header = () => {
       </div>
       <div className="black-container">
         <div className="header__circle">
-          <div className="header__inner-circle">
-            <div className="header__config" onClick={handleConfig}>
-              {
-                configOpen ?
-                  <i className="fa-solid fa-xmark header__icon-config"></i>
-                  :
-                  <i className="fa-solid fa-gear header__icon-config"></i>
-              }
+          <div className="header__inner-circle"onClick={handleConfig}>
+            <div className="header__config" >
             </div>
           </div>
         </div>

@@ -36,7 +36,7 @@ const Home = () => {
       <FormInputButton
         handleSubmit={handleSubmit}
         id='trainer'
-        placeholder='Your name...'
+        placeholder='Tu nombre...'
         textButton='Start'
         value={trainer}
         modifierMainContainer='c-form--home'
@@ -45,9 +45,9 @@ const Home = () => {
         <div className="home-footer__red-container" />
         <div className="home-footer__black-container">
           <div className="home-footer__circle">
-            <div className="home-footer__inner-circle">
-              <div className="home-footer__config" onClick={handleConfig}>
-                <i className="fa-solid fa-gear home-footer__icon-config" />
+            <div className="home-footer__inner-circle"onClick={handleConfig}>
+              <div className="home-footer__config" >
+              
               </div>
             </div>
           </div>
