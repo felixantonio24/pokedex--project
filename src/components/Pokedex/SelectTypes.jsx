@@ -39,7 +39,7 @@ const SelectTypes = ({ setTypeSelected }) => {
               className={`select-type__options ${titleSelectMenu === 'All pokemons' ? 'select-type__options--active' : ''}`}
               onClick={() => changeTypes('All pokemons')}
             >
-              All pokemons
+              Todos los pokemones.
             </li>
 
         

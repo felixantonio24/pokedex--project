@@ -33,7 +33,7 @@ const PokeCardMainInfo = ({ pokemon }) => {
       setPokeBodyPhysic([{ name: ['weight', pokemon.weight] }, { name: ['height', pokemon.height] }])
       setGradients(generateGradient(colorTypes[pokemon.types[0].type.name]))
     }
-    console.log("entra");
+    
   }, [pokemon])
 
   const objStyleCard__name = {
@@ -68,7 +68,7 @@ const PokeCardMainInfo = ({ pokemon }) => {
       </header>
       <section className='basic-description'>
         <aside className='basic-description__types'>
-          <h3 className='basic-description__title'>Type</h3>
+          <h3 className='basic-description__title'>Tipo</h3>
           <ul className='basic-description__list'>
             {
               pokemon?.types.map((type, indx) => (
@@ -82,7 +82,7 @@ const PokeCardMainInfo = ({ pokemon }) => {
           </ul>
         </aside>
         <aside className='basic-description__types'>
-          <h3 className='basic-description__title'>Abilities</h3>
+          <h3 className='basic-description__title'>Abilidades</h3>
           <ul className='basic-description__list'>
             {
               pokemon?.abilities.map(ability => (
@@ -100,6 +100,7 @@ const PokeCardMainInfo = ({ pokemon }) => {
         <TitleInfo
           title='Stats'
         />
+        
         <ul className='stat-info__stats-container'>
           {
             pokemon?.stats.map(stat => (

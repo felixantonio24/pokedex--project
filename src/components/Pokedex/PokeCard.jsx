@@ -74,20 +74,48 @@ const PokeCard = ({ url }) => {
               ))
             }
           </ul>
-          <span className='card__titleType'>Type</span>
+          <span className='card__titleType'>Tipo</span>
         </section>
       </header>
       <div className="card__divider"></div>
       <footer className='card__footer' >
         <ul className='list-stats'>
-          {
-            pokemon?.stats.map(stat => (
-              <li className='list-stats__item' key={stat.stat.name}>
-                <span className='list-stats__name-stat'>{stat.stat.name}</span>
-                <span className='list-stats__number-stat' style={objStyleCard__name}>{stat.base_stat}</span>
+          
+              <li className='list-stats__item'>
+                <span  className='list-stats__name-stat'>HP</span>
+                <span className='list-stats__number-stat'>{pokemon?.stats[0].base_stat}</span>
               </li>
-            ))
-          }
+
+              <li className='list-stats__item'>
+                <span  className='list-stats__name-stat'>Ataque</span>
+                <span className='list-stats__number-stat'>{pokemon?.stats[1].base_stat}</span>
+              </li>
+
+              <li className='list-stats__item'>
+                <span  className='list-stats__name-stat'>Defensa</span>
+                <span className='list-stats__number-stat'>{pokemon?.stats[2].base_stat}</span>
+              </li>
+
+              <li className='list-stats__item'>
+                <span  className='list-stats__name-stat'>Ataque especial</span>
+                <span className='list-stats__number-stat'>{pokemon?.stats[3].base_stat}</span>
+              </li>
+
+              <li className='list-stats__item'>
+                <span  className='list-stats__name-stat'>Defensa especial</span>
+                <span className='list-stats__number-stat'>{pokemon?.stats[4].base_stat}</span>
+              </li>
+
+              <li className='list-stats__item'>
+                <span  className='list-stats__name-stat'>Velocidad</span>
+                <span className='list-stats__number-stat'>{pokemon?.stats[5].base_stat}</span>
+              </li>
+      
+      
+      
+      
+      
+      
         </ul>
       </footer>
     </article>

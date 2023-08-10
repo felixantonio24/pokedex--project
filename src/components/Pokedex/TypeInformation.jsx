@@ -8,6 +8,7 @@ const TypeInformation = ({ type, idx, array }) => {
           <>
             <li className='list-type__type'>{type.type.name}</li>
             <li>{'/'}</li>
+            
           </>
           :
           <li className='list-type__type' key={type.type.url}>{type.type.name}</li>

@@ -11,7 +11,7 @@ const PokeCardMovements = ({ pokemon }) => {
       />
       {
         (pokemon?.moves.length === 0) ?
-          <span className='poke-movements__empty'>This pokemon doesn't have any movement</span>
+          <span className='poke-movements__empty'>Este pokemon no tiene ningún movimiento.</span>
           :
           <ul className='poke-movements__list'>
             {
